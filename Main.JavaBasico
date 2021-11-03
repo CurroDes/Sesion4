@@ -1,0 +1,48 @@
+package Clases;
+
+import Clases.herencia.SmartPhone;
+import Clases.herencia.SmartWatch;
+
+public class Main {
+
+
+
+
+    //En este ejercicio tendréis que crear una clase SmartDevice. Dentro crearéis las clases hijas: SmartPhone y SmartWatch.
+    //Agregaréis atributos tal cual tendrían esos objetos en la realidad.
+    //Crear constructor vacío y con todos los parámetros para cada clase.
+    //Desde una clase Main: crearéis objetos de cada una y los utilizaréis para imprimir sus valores por consola.
+
+
+    public static void main(String[] args) {
+
+
+    SmartDevice Mando = new SmartDevice("OKI", "Mando20",5.0, 6.1,5.0,8.2);
+        Mando.fabricante = "OKI";
+        Mando.sistema = 5.0;
+
+
+
+
+        System.out.println(Mando.fabricante);
+        System.out.println(Mando.sistema);
+
+        SmartPhone Movil = new SmartPhone();
+        Movil.fabricante = "OKI";
+        Movil.modelo = "Mando20";
+        Movil.sistema = 5.0;
+
+        System.out.println(Movil.fabricante);
+
+        SmartWatch Reloj = new SmartWatch();
+        Reloj.fabricante = "OKI";
+        Reloj.modelo = "Mando20";
+        Reloj.sistema = 5.0;
+
+        System.out.println(Reloj.modelo);
+        System.out.println(Reloj.sistema);
+
+
+    }
+
+}
